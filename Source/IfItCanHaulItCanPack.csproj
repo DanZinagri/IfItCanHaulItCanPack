@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Builds the 1.7 DLL. The 1.6 DLL in 1.6/Assemblies is a frozen net48 build of the same source. -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <AssemblyName>IfItCanHaulItCanPack</AssemblyName>
+    <RootNamespace>IfItCanHaulItCanPack</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <OutputPath>..\1.7\Assemblies\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+    <DebugType>none</DebugType>
+    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>E:\SteamLibrary\steamapps\workshop\content\294100\2009463077\1.7\Assemblies\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>E:\SteamLibrary\steamapps\common\RimWorld\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityStubs">
+      <HintPath>E:\SteamLibrary\steamapps\common\RimWorld\UnityStubs.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

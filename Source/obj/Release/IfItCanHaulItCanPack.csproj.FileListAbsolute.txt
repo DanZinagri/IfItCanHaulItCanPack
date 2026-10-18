@@ -1,0 +1,5 @@
+C:\Users\DanZinagri\Documents\RimWorldProjects\IfItCanHaulItCanPack\1.7\Assemblies\IfItCanHaulItCanPack.dll
+C:\Users\DanZinagri\Documents\RimWorldProjects\IfItCanHaulItCanPack\Source\obj\Release\IfItCanHaulItCanPack.csproj.AssemblyReference.cache
+C:\Users\DanZinagri\Documents\RimWorldProjects\IfItCanHaulItCanPack\Source\obj\Release\IfItCanHaulItCanPack.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DanZinagri\Documents\RimWorldProjects\IfItCanHaulItCanPack\Source\obj\Release\IfItCanHaulItCanPack.csproj.CoreCompileInputs.cache
+C:\Users\DanZinagri\Documents\RimWorldProjects\IfItCanHaulItCanPack\Source\obj\Release\IfItCanHaulItCanPack.dll
