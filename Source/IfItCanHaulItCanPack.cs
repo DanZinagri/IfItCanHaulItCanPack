@@ -1,3 +1,4 @@
+using System.Reflection;
 using System.Collections.Generic;
 using HarmonyLib;
 using RimWorld;
@@ -49,7 +50,9 @@ namespace IfItCanHaulItCanPack
 
             if (flagged.Count > 0)
             {
-                new Harmony("DanZinagri.IfItCanHaulItCanPack").PatchAll();
+                // The assembly is passed explicitly: on .NET 10 (1.7) the parameterless PatchAll() reads the calling
+                // assembly off the stack, which breaks when the JIT inlines the call (Harmony issue #395).
+                new Harmony("DanZinagri.IfItCanHaulItCanPack").PatchAll(Assembly.GetExecutingAssembly());
             }
             Log.Message("[If It Can Haul, It Can Pack] Flagged " + flagged.Count + " haul-trainable animals as pack animals (" + (candidates.Count - flagged.Count) + " disabled in settings).");
         }
